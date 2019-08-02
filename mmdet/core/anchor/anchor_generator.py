@@ -35,6 +35,7 @@ class AnchorGenerator(object):
 
         base_anchors = torch.stack(
             [
+		
                 x_ctr - 0.5 * (ws - 1), y_ctr - 0.5 * (hs - 1),
                 x_ctr + 0.5 * (ws - 1), y_ctr + 0.5 * (hs - 1)
             ],
